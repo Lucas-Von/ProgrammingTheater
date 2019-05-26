@@ -101,7 +101,7 @@ public class ProgrammingTheaterApplicationTests {
 			return;
 		}
 		for (Code c : codes){
-			System.out.println(c.getUserId() + "___" + c.getContent());
+//			System.out.println(c.getUserId() + "___" + c.getContent());
 		}
 //		Assert.assertTrue(!basicResponse.isSuccess());
 	}

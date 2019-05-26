@@ -11,32 +11,32 @@ public class Code {
 
     @Id
     @Column
-    private String userId = "";
+    private String username = "";
 
     @Column
-    private String content = "";
+    private String script = "";
 
-    public String getUserId() {
-        return userId;
+    public String getUsername() {
+        return username;
     }
 
-    public void setUserId(String userId) {
-        this.userId = userId;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
-    public String getContent() {
-        return content;
+    public String getScript() {
+        return script;
     }
 
-    public void setContent(String content) {
-        this.content = content;
+    public void setScript(String script) {
+        this.script = script;
     }
 
     public Code() {
     }
 
-    public Code(String userId, String content) {
-        this.userId = userId;
-        this.content = content;
+    public Code(String username, String script) {
+        this.username = username;
+        this.script = script;
     }
 }

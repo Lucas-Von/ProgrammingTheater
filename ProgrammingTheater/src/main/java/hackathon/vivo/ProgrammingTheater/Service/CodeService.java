@@ -32,6 +32,6 @@ public class CodeService {
 //            return new BasicResponse(false, "代码不存在");
 //        }
         Code code = codeRepo.findById(userId).get();
-        return new BasicResponse(true, code.getContent());
+        return new BasicResponse(true, code.getScript());
     }
 }
