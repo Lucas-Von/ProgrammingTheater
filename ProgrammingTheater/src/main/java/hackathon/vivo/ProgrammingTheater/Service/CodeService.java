@@ -28,9 +28,9 @@ public class CodeService {
     }
 
     public BasicResponse getCode(String userId){
-//        if (!codeRepo.existsById(userId)){
-//            return new BasicResponse(false, "代码不存在");
-//        }
+        if (!codeRepo.existsById(userId)){
+            return new BasicResponse(false, "代码不存在");
+        }
         Code code = codeRepo.findById(userId).get();
         return new BasicResponse(true, code.getScript());
     }

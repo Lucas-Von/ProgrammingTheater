@@ -15,12 +15,12 @@ public class CodeController {
     CodeService codeService;
 
     @PostMapping(value = "/setCode")
-    public BasicResponse setCode(CodeParameter parameter){
+    public BasicResponse setCode(@RequestBody CodeParameter parameter){
         return codeService.setCode(parameter.getUserId(), parameter.getCode());
     }
 
     @PostMapping(value = "/getCode")
-    public BasicResponse getCode(CodeParameter parameter){
+    public BasicResponse getCode(@RequestBody CodeParameter parameter){
         return codeService.getCode(parameter.getUserId());
     }
 }
